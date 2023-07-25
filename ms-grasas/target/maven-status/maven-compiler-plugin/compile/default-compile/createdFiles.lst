@@ -1,0 +1,5 @@
+com\milkstgo\grasas\Entities\GrasasEntity.class
+com\milkstgo\grasas\GrasasApplication.class
+com\milkstgo\grasas\Repositories\GrasasRepository.class
+com\milkstgo\grasas\Controllers\GrasasController.class
+com\milkstgo\grasas\Services\GrasasService.class

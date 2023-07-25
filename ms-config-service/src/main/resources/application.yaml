@@ -1,5 +1,5 @@
 server:
-  port: 8084
+  port: 8081
 spring:
   cloud:
     config:
@@ -9,6 +9,6 @@ spring:
           uri: https://github.com/vastien/msantiago
           search-paths: config-data
           username: vastien
-          password: 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
+          password: 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
   application:
     name: config-service

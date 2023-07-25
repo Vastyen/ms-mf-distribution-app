@@ -4,7 +4,7 @@ spring:
   cloud:
     config:
       enabled: true
-      uri: http://localhost:8084
+      uri: http://localhost:8081
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     dbname: acopio

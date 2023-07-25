@@ -81,6 +81,7 @@
 	</dependencyManagement>
 
 	<build>
+		<finalName>ms-proveedor-service</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

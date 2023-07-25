@@ -1,0 +1,5 @@
+com\milkstgo\proveedor\Entities\ProveedorEntity.class
+com\milkstgo\proveedor\ProveedorApplication.class
+com\milkstgo\proveedor\Controllers\ProveedorController.class
+com\milkstgo\proveedor\Repositories\ProveedorRepository.class
+com\milkstgo\proveedor\Services\ProveedorService.class
