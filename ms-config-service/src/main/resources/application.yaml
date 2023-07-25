@@ -9,6 +9,6 @@ spring:
           uri: https://github.com/vastien/msantiago
           search-paths: config-data
           username: vastien
-          password: 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
+          password: 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
   application:
     name: config-service

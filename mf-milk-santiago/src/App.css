@@ -2,6 +2,66 @@
   text-align: center;
 }
 
+*{
+  color: white;
+}
+
+.tabla{
+  display: flex;
+  top: 100px;
+  margin-top: 10vh;
+}
+
+input{
+  color: white !important;
+}
+
+label{
+  color: white !important;
+}
+
+.boton{
+  background-color: red !important;
+}
+ul{
+  background-color: #111111;
+}
+li{
+  background-color: #111111;
+    padding: 0 !important;
+}
+a{
+    background-color: #111111;
+  padding: 0 !important;
+}
+
+.text-lg{
+  color: black !important;
+      border: 1px solid white;
+}
+
+th{
+  color: black !important;
+  background-color: rgb(240, 235, 235);
+  border: 1px solid #000000;
+}
+
+tr{
+    border: 1px solid white;
+}
+
+td{
+      border: 1px solid white;
+}
+
+
+.font-medium{
+      background-color: #111111;
+}
+
+.border-gray-200{
+  background-color: #111111;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
