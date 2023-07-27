@@ -20,28 +20,26 @@ spec:
           ports:
             - containerPort: 8081
           env:
+            - name: SPRING_JPA_DATABASE_PLATFORM
+              value: org.hibernate.dialect.MySQL8Dialect
+            - name: SPRING_DATASOURCE_URL
+              value: jdbc:mysql://mysql:3306/grasas
             - name: SPRING_CLOUD_CONFIG_URI
               value: http://config-service:8081
+            - name: EUREKA_CLIENT_FETCH_REGISTRY
+              value: "true"
+            - name: EUREKA_CLIENT_REGISTER_WITH_EUREKA
+              value: "true"
             - name: EUREKA_CLIENT_SERVICEURL_DEFAULTZONE
-              value: http://eureka-service:8761
+              value: http://eureka-service:8761/eureka/
             - name: eureka.instance.preferIpAddress
               value: "true"
-            - name: DB_HOST
-              valueFrom:
-                configMapKeyRef:
-                  name: grasas
-                  key: host
-            - name: DB_NAME
-              valueFrom:
-                configMapKeyRef:
-                  name: grasas
-                  key: name
-            - name: DB_USERNAME
+            - name: SPRING_DATASOURCE_USERNAME
               valueFrom:
                 secretKeyRef:
                   name: mysql-root-credentials
                   key: username
-            - name: DB_PASSWORD
+            - name: SPRING_DATASOURCE_PASSWORD
               valueFrom:
                 secretKeyRef:
                   name: mysql-root-credentials

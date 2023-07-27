@@ -14,6 +14,7 @@
 	<name>gateway-service</name>
 	<description>Milk Santiago - Microservicio Gateway-Service</description>
 	<properties>
+		<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
 		<java.version>11</java.version>
 		<spring-cloud.version>2021.0.7</spring-cloud.version>
 	</properties>

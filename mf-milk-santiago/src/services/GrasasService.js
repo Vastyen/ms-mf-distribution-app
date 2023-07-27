@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8080/grasas";
+const API_URL = "http://grasas:8080/grasas";
 
 class GrasasService{
     

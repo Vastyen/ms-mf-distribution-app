@@ -1,6 +1,7 @@
 com\milkstgo\planillaPago\Repositories\PlanillaPagoRepository.class
 com\milkstgo\planillaPago\PlanillaPagoApplication.class
 com\milkstgo\planillaPago\Models\Acopio.class
+com\milkstgo\planillaPago\Services\PlanillaPagoService$2.class
 com\milkstgo\planillaPago\Models\Grasas.class
 com\milkstgo\planillaPago\Services\PlanillaPagoService.class
 com\milkstgo\planillaPago\Entities\PlanillaPagoEntity.class

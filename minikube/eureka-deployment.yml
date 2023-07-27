@@ -15,8 +15,8 @@ spec:
         app: eureka-deployment
     spec:
       containers:
-        - name: eureka
-          image: vastien/ms-eureka-service
+        - name: eureka-service
+          image: vastien/eureka-service
           ports:
             - containerPort: 8081
           env:

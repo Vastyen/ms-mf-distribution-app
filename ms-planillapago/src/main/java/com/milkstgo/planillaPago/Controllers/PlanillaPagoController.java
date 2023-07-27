@@ -13,10 +13,8 @@ import java.util.List;
 @RestController
 @RequestMapping("/planillaPago")
 public class PlanillaPagoController {
-
     @Autowired
     PlanillaPagoService planillaPagoService;
-
     @GetMapping
     public ResponseEntity<List<PlanillaPagoEntity>> traerProveedores() {
         List<PlanillaPagoEntity> planillas = planillaPagoService.traerPlanilla();

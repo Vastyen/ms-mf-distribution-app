@@ -9,11 +9,12 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.milkstgo</groupId>
-	<artifactId>planillaPago</artifactId>
+	<artifactId>planillapago</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>planillaPago</name>
+	<name>planillapago</name>
 	<description>Milk Santiago - Microservicio de Planilla de Pago</description>
 	<properties>
+		<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
 		<java.version>11</java.version>
 		<spring-cloud.version>2021.0.7</spring-cloud.version>
 	</properties>
@@ -77,7 +78,7 @@
 	</dependencyManagement>
 
 	<build>
-		<finalName>ms-planillapago-service</finalName>
+		<finalName>planillapago</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

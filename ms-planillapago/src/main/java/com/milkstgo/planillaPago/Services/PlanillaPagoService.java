@@ -342,20 +342,24 @@ public class PlanillaPagoService {
     public void borrarPlanillas(){planillaPagoRepository.deleteAll();}
 
     public List<String> getcodigos() {
-        return restTemplate.getForObject("http://localhost:8080/proveedores/codigos", List.class);
+        return restTemplate.exchange(
+                "http://gateway-service:8080/proveedores/codigos",
+                HttpMethod.GET,
+                null,
+                new ParameterizedTypeReference<List<String>>() {}
+        ).getBody();
     }
 
     public Proveedor traerProveedor(String id) {
-        return restTemplate.getForObject("http://localhost:8080/proveedores/" + id, Proveedor.class);
+        return restTemplate.getForObject("http://gateway-service:8080/proveedores/" + id, Proveedor.class);
     }
-
     public Grasas traerGrasasPorProveedor(String id) {
-        return restTemplate.getForObject("http://localhost:8080/grasas/" + id, Grasas.class);
+        return restTemplate.getForObject("http://gateway-service:8080/grasas/" + id, Grasas.class);
     }
 
     public List<Acopio> traerAcopiosPorProveedor(String id) {
         ResponseEntity<List<Acopio>> response = restTemplate.exchange(
-                "http://localhost:8080/acopios/" + id,
+                "http://gateway-service:8080/acopios/" + id,
                 HttpMethod.GET,
                 null,
                 new ParameterizedTypeReference<List<Acopio>>() {}

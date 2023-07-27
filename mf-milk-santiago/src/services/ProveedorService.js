@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const PROVEEDOR_API_URL = "http://localhost:8080/proveedores";
+const PROVEEDOR_API_URL = "http://proveedor:8080/proveedores";
 
 class ProveedorService {
 

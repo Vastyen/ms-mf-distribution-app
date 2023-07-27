@@ -1,3 +1,9 @@
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://eureka-service:8761/eureka/
 spring:
   application:
     name: proveedor
@@ -8,9 +14,9 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     dbname: proveedor
-    url: jdbc:mysql://localhost:3306/proveedor
+    url: jdbc:mysql://mysql:3306/proveedor
     username: root
-    password: "@12345678xD"
+    password: root
   jpa:
     show-sql: true
     hibernate:
